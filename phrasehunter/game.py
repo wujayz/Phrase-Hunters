@@ -1,25 +1,38 @@
-# Create your Game class logic in here.
+
+import random
+
+from phrase import Phrase
+
+class Game:
+
+    phrases = ["Close But No Cigar", "Cry Over Spilled Milk",
+               "Curiosity Killed The Cat", "Cut To The Chase",
+               "Back to Square One"]
+
+    def __init__(self):
+        #self.____ = ___
+        self.missed = 0
+        # this is used to track no. of incorrect guesses / initial value = 0
+        self.active_phrase = None
+        # initial value = None. within the start() method, this is set to phrase object
+        # returned from call to the get_random_phrase() method
+        self.guesses = [" "]
+        # list contains all guesses made. 
+
+
+    def get_random_phrase(self):
+        # Method get_random_phrase() for getting a random phrase from phrases
+        # stored in the phrases list and returns
+        pass
 
 
 
-# def __init__(): 
-# initializer with following attributes
+    
 
-# missed
-# used to track no. of inccorect guesses by user. initial value = 0
+    def start(self):
+        pass
 
-# phrases
-# list of five phrase objects to use with the game
-# a phrase should only include letters and spaces
-
-# active_phrase:
-# this is the phrase object currently in play: the initial value = None
-# within the 
-# start() method, this is set to phrase object returend from a call to 
-# the get_random_phrase() method
-
-
-# class should also include methods:
+    
 
 
 # Method start() for starting the game
@@ -31,8 +44,7 @@
 
 # Method for handling interactions
 
-# Method get_random_phrase() for getting a random phrase from phrases
-# stored in the phrases list and returns
+
 
 # Method for checking for a win/loss state
 
